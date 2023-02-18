@@ -1,19 +1,22 @@
 import { openDB } from "idb";
 import { boot } from "quasar/wrappers";
 
-const idb = await openDB('translations', 1, {
+const openConnection = async () => {
+    return await openDB('translations', 1, {
 
-    upgrade(db) {
+        upgrade(db) {
 
-        db.createObjectStore('history', {
-            keyPath: 'id',
-            autoIncrement: true,
-        });
+            db.createObjectStore('history', {
+                keyPath: 'id',
+                autoIncrement: true,
+            });
 
-        db.createObjectStore('keyval');
-    },
+            db.createObjectStore('keyval');
+        },
+    });
+}
 
-});
+const idb = await openConnection()
 
 export default boot(({ app }) => { });
 
