@@ -12,8 +12,8 @@
 </template>
 
 <script lang="ts">
-    import { toDolar, toReal } from "src/components/models";
-    import { computed, defineComponent } from "vue";
+import { computed, defineComponent } from "vue";
+import { toDolar, toReal } from "./helper";
 
     export default defineComponent({
         name: "MoneyField",

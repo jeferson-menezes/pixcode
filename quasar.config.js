@@ -139,7 +139,7 @@ module.exports = configure(function (/* ctx */) {
     // https://v2.quasar.dev/quasar-cli-vite/developing-pwa/configuring-pwa
     pwa: {
       workboxPluginMode: 'generateSW',
-      workboxOptions: { skipWaiting: true, clientClaim: true },
+      workboxOptions: { skipWaiting: true, clientsClaim: true },
       workboxMode: 'generateSW', // or 'injectManifest'
       injectPwaMetaTags: true,
       swFilename: 'sw.js',
