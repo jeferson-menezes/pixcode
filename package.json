@@ -1,0 +1,38 @@
+{
+  "name": "pixcode",
+  "version": "0.0.1",
+  "description": "Gerador de código de pagamento pix",
+  "productName": "Pix code",
+  "author": "jeferson-menezes <jefersonjesusmenezes@yahoo.com>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "currency.js": "^2.0.4",
+    "idb": "^7.1.1",
+    "qrcode-pix": "5.0.0",
+    "quasar": "^2.6.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^1.0.0",
+    "@types/node": "^12.20.21",
+    "autoprefixer": "^10.4.2",
+    "typescript": "^4.5.4",
+    "workbox-build": "^6.5.4",
+    "workbox-cacheable-response": "^6.5.4",
+    "workbox-core": "^6.5.4",
+    "workbox-expiration": "^6.5.4",
+    "workbox-precaching": "^6.5.4",
+    "workbox-routing": "^6.5.4",
+    "workbox-strategies": "^6.5.4"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14.19",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
