@@ -83,6 +83,7 @@
             };
 
             onMounted(async () => (pix.value = await getHistory(historyId.value)));
+            
             return { pix, copyPayload, toReal: toRealSymbol };
         },
     });

@@ -104,6 +104,8 @@
 
                     router.push({ name: "pix", params: { id: id.toString() } });
                 } catch (err) {
+                    console.log(err);
+                    
                     notifyError("Houve um erro ao gerar cobrança pix");
                 }
             };
@@ -113,6 +115,7 @@
                 if (payload) {
                     param = JSON.parse(payload);
                 } else {
+                    router.push({name:'params'})
                     $q.dialog({
                         title: "Atenção",
                         message: "É preciso cadastrar a chave pix antes!",

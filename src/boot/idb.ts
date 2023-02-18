@@ -1,8 +1,10 @@
-import { openDB } from "idb";
+import { IDBPDatabase, openDB } from "idb";
 import { boot } from "quasar/wrappers";
 
-const openConnection = async () => {
-    return await openDB('translations', 1, {
+let idb: IDBPDatabase
+
+(async () => {
+    idb = await openDB('translations', 1, {
 
         upgrade(db) {
 
@@ -14,9 +16,8 @@ const openConnection = async () => {
             db.createObjectStore('keyval');
         },
     });
-}
+})()
 
-const idb = await openConnection()
 
 export default boot(({ app }) => { });
 
