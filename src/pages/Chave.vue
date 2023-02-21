@@ -7,12 +7,12 @@
         </div>
 
         <div class="row justify-center">
-            <div class="col-12 text-center text-h3 text-weight-bold">
+            <div class="col-12 text-center text-h4 text-weight-bold">
                 PAGUE COM
             </div>
 
-            <div class="col-12 text-center q-pa-md">
-                <q-img src="src/assets/logo_pix.png" />
+            <div class="col-8 text-center q-pa-md">
+                <q-img src="~assets/logo_pix.png" />
             </div>
             <div class="col-10 text-center q-pa-xs q-my-md">
                 <q-img :src="base64"></q-img>
