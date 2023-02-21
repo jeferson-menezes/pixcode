@@ -13,7 +13,7 @@ export class Gerador {
             name: param.nome.normalize('NFD').replace(/[\u0300-\u036f]/g, ""),
             city: param.cidade.normalize('NFD').replace(/[\u0300-\u036f]/g, ""),
             transactionId: id, //max 25 characters
-            message: descricao.normalize('NFD').replace(/[\u0300-\u036f]/g, ""),
+            message: descricao ? descricao.normalize('NFD').replace(/[\u0300-\u036f]/g, "") : id,
             cep: '99999999',
             value: +valor,
         })

@@ -65,6 +65,7 @@
         setup() {
             const { getAllHistoory, deleteHistory } = useHistory();
             const { notifySuccess, notifyError } = useNotify();
+
             const loading = ref(false);
             const stories = ref();
 
@@ -102,11 +103,11 @@
             onMounted(listar);
 
             return {
-                toReal: toRealSymbol,
                 columns,
                 stories,
                 loading,
                 excluir,
+                toReal: toRealSymbol,
             };
         },
     });

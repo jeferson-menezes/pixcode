@@ -9,8 +9,8 @@ export const Tipo = {
   ALEATORIA: 'ALEATORIA',
 }
 export const TipoText = {
-  CPF: 'CPF',
-  CNPJ: 'CNPJ',
+  CPF: 'Cpf',
+  CNPJ: 'Cnpj',
   EMAIL: 'E-mail',
   CELULAR: 'Número de telefone celular',
   ALEATORIA: 'Chave aleatória',

@@ -12,6 +12,9 @@
                 />
 
                 <q-toolbar-title> Pix Code </q-toolbar-title>
+                <q-btn flat round dense icon="pix" :to="{ name: 'key' }">
+                    <q-tooltip> Visualizar Minha chava pix </q-tooltip>
+                </q-btn>
             </q-toolbar>
         </q-header>
 
@@ -42,13 +45,13 @@
             icon: "mdi-cash-plus",
             routerName: "new",
         },
-           {
+        {
             title: "Histórico",
             caption: "Histórico de cobranças",
             icon: "mdi-history",
             routerName: "history",
         },
-           {
+        {
             title: "Parâmetros",
             caption: "Configuração de parâmetros",
             icon: "mdi-cog",

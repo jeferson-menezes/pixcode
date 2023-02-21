@@ -75,10 +75,10 @@
 
 <script lang="ts">
     import { Tipo, TipoMask, TipoText } from "src/components/models";
+    import { maxLength, required } from "src/components/rules";
     import useNotify from "src/composable/useNotifyComposable";
     import { computed, defineComponent, onMounted, ref } from "vue";
     import useParams from "../composable/useParamsComposable";
-    import { maxLength, required } from "src/components/rules";
 
     export default defineComponent({
         name: "Params",

@@ -79,11 +79,14 @@
                             "Código pix copia e cola, copiado com sucesso!"
                         )
                     )
-                    .catch(() => notifyError("Houve um erro a copiar código pix!"));
+                    .catch((err) => {
+                        console.log(err);
+                        notifyError("Houve um erro a copiar código pix!");
+                    });
             };
 
             onMounted(async () => (pix.value = await getHistory(historyId.value)));
-            
+
             return { pix, copyPayload, toReal: toRealSymbol };
         },
     });
